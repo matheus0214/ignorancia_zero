@@ -20,3 +20,22 @@ delta = b**2 - 4*a*c
 raiz = (-b +ou-(delta**(1/2)))/(2*a)
 
 """
+
+A = int(input("Digite o valor de A: "))
+
+
+if A > 0:
+    B = int(input("Digite o valor de B: "))
+    C = int(input("Digite o valor de C: "))
+
+    DELTA = B**2 - 4 * A * C
+
+    if DELTA < 0:
+        print("Equação não possui raizes reais")
+    elif DELTA == 0:
+        print((-B + (DELTA ** (1 / 2))) / (2 * A))
+    else:
+        print((-B + (DELTA ** (1 / 2))) / (2 * A))
+        print((-B - (DELTA ** (1 / 2))) / (2 * A))
+else:
+    print("Equação não e de segundo grau")
